@@ -5,18 +5,18 @@
   
   $json_db = new JSONDB(__DIR__.'/../assets/json');
   $json_file = 'interest.json';
-  $email = $_POST['email'];
+  // $email = $_POST['email'];
   $phone = $_POST['phone'];
   $post_data = [
-    'name' => $_POST['name'],
-    'email' => $email,
+    // 'name' => $_POST['name'],
+    // 'email' => $email,
     'phone' => $phone,
-    'make' => $_POST['make'],
-    'model' => $_POST['model'],
-    'yom' => $_POST['yom'],
+    // 'make' => $_POST['make'],
+    // 'model' => $_POST['model'],
+    // 'yom' => $_POST['yom'],
     'service' => $_POST['service'],
   ];
-  $match_data = ['email' => $email, 'phone' => $phone];
+  $match_data = ['phone' => $phone];
 
   //Check for duplicates
   $match = $json_db->select('*')->from($json_file)->where($match_data, 'AND')->get();

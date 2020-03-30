@@ -140,7 +140,13 @@
 
                     <div class="row">
                         <div class="offset-lg-3 col-lg-6">
-                            <form action="forms/get-started.php" method="post" role="form" class="php-email-form" data-aos="fade-up">
+                            <!-- <form action="forms/get-started.php" method="post" role="form" class="php-email-form" data-aos="fade-up"> -->
+
+                            <form action="https://submit-form.com/irvxuv5qmBYB6uANyj5kE" target="_self">
+                                <input type="hidden" name="_feedback.success.title" value="Successful" />
+
+                                <input type="hidden" name="_feedback.success.message" value="Thanks for expressing interest. We will send you access instructions in the coming days" />
+
                                 <!-- <div class="form-group">
                   <input
                     placeholder="Your Full Name"
@@ -166,7 +172,8 @@
                   <div class="validate"></div>
                 </div> -->
                                 <div class="form-group">
-                                    <input placeholder="Your Phone e.g 0722123456" type="number" class="form-control" name="phone" id="phone" data-rule="minlen:10" required data-msg="Please enter at least 10 chars for phone number" style="border-radius: 5px;" />
+                                    <input placeholder="Your Phone e.g 0722123456" type="text" class="form-control" name="phone" id="phone" data-rule="minlen:10" required="true" data-msg="Please enter at least 10 chars for phone number" style="border-radius: 5px;" size="10" maxlength="10"
+                                        minlength="10" />
                                     <div class="validate"></div>
                                 </div>
                                 <!-- <div class="form-group">
@@ -222,7 +229,7 @@
                                     </div>
                                 </div>
                                 <div class="text-center">
-                                    <button class="get-started" type="submit">
+                                    <button class="get-started-btn" type="submit">
                     Get Free Access
                   </button>
                                 </div>

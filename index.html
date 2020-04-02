@@ -28,6 +28,7 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
+
     <script>
         (function(c, a) {
             if (!a.__SV) {
@@ -91,6 +92,10 @@
             }
         })(document, window.mixpanel || []);
         mixpanel.init("b7444e8551b0f47bfd591f20ae2f34f7")
+    </script>
+    <script>
+        let USER_ID = Math.floor((Math.random() * 1000000000000000) + 1);
+        window.mixpanel.identify(USER_ID);
     </script>
 </head>
 

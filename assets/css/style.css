@@ -800,14 +800,15 @@ section {
     background: #007aff;
     display: inline-block;
     padding: 6px 30px;
-    border-radius: 30px;
+    border-radius: 20px;
     color: #fff;
     transition: none;
     font-size: 14px;
     font-weight: 400;
     font-family: "Raleway", sans-serif;
     transition: 0.3s;
-    height: 60px;
+    border: 1px solid #007aff;
+    height: 40px;
 }
 
 .pricing .get-started-btn:hover {

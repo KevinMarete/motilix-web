@@ -6,7 +6,8 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
     <title>Motilix | Get Started</title>
-    <meta name="description" content="MOTILIX is a platform that allows you unlimited access to a country wide network of trusted mechanics, genuine spare parts and aggregated vehicle information.">
+    <meta name="description"
+        content="MOTILIX is a platform that allows you unlimited access to a country wide network of trusted mechanics, genuine spare parts and aggregated vehicle information.">
     <meta name="keywords" content="Motilix,Vehicle, Diagnostics, Car, Parts, Mechanics,Services">
     <meta name="author" content="John, Marete, William">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +17,9 @@
     <link href="assets/img/favicon.png" rel="icon" />
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet" />
 
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -31,8 +34,8 @@
 
     <!-- Hotjar Tracking Code for https://motilix.com -->
     <script>
-        (function(h, o, t, j, a, r) {
-            h.hj = h.hj || function() {
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () {
                 (h.hj.q = h.hj.q || []).push(arguments)
             };
             h._hjSettings = {
@@ -47,17 +50,17 @@
         })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
     </script>
     <script type="text/javascript">
-        window.heap = window.heap || [], heap.load = function(e, t) {
+        window.heap = window.heap || [], heap.load = function (e, t) {
             window.heap.appid = e, window.heap.config = t = t || {};
             var r = document.createElement("script");
             r.type = "text/javascript", r.async = !0, r.src = "https://cdn.heapanalytics.com/js/heap-" + e + ".js";
             var a = document.getElementsByTagName("script")[0];
             a.parentNode.insertBefore(r, a);
-            for (var n = function(e) {
-                    return function() {
-                        heap.push([e].concat(Array.prototype.slice.call(arguments, 0)))
-                    }
-                }, p = ["addEventProperties", "addUserProperties", "clearEventProperties", "identify", "resetIdentity", "removeEventProperty", "setEventProperties", "track", "unsetEventProperty"], o = 0; o < p.length; o++) heap[p[o]] = n(p[o])
+            for (var n = function (e) {
+                return function () {
+                    heap.push([e].concat(Array.prototype.slice.call(arguments, 0)))
+                }
+            }, p = ["addEventProperties", "addUserProperties", "clearEventProperties", "identify", "resetIdentity", "removeEventProperty", "setEventProperties", "track", "unsetEventProperty"], o = 0; o < p.length; o++) heap[p[o]] = n(p[o])
         };
         heap.load("3649665099");
     </script>
@@ -73,8 +76,6 @@
         <div class="container d-flex">
             <div class="logo mr-auto">
                 <h1 class="text-light"><a href="index.html">MOTILIX</a></h1>
-                <!-- Uncomment below if you prefer to use an image logo -->
-                <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
             </div>
 
             <nav class="nav-menu d-none d-lg-block">
@@ -82,7 +83,9 @@
                     <li class="active"><a href="#header">Home</a></li>
                     <li><a href="#features">Features</a></li>
                     <li class="get-started">
-                        <a href="#get-started">Get Started- It's Free</a>
+                        <a type="button" data-toggle="modal" data-target="#getStartedModal">
+                            Get Started- It's Free
+                        </a>
                     </li>
                 </ul>
             </nav>
@@ -95,7 +98,8 @@
     <section id="hero" class="d-flex align-items-center">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 d-lg-flex flex-lg-column justify-content-center align-items-stretch pt-5 pt-lg-0 order-2 order-lg-1" data-aos="fade-up">
+                <div class="col-lg-6 d-lg-flex flex-lg-column justify-content-center align-items-stretch pt-5 pt-lg-0 order-2 order-lg-1"
+                    data-aos="fade-up">
                     <div>
                         <h1>Do you value your vehicle?</h1>
                         <h2>
@@ -103,13 +107,18 @@
                                 Never get stuck.
                             </p>
                             <p>
-                                Join a platform that gives you access to a network of verified & trusted mechanics and marketplace of vehicle spare parts & supplies.
+                                Join a platform that gives you access to a network of verified & trusted mechanics and
+                                marketplace of vehicle spare parts & supplies.
                             </p>
                         </h2>
-                        <a href="#get-started" class="download-btn"><i class="bx bx-arrow-to-right"></i> Get Started - It's Free</a>
+                        <a type="button" class="download-btn" data-toggle="modal" data-target="#getStartedModal">
+                            <i class="bx bx-arrow-to-right"></i>
+                            Get Started - It's Free
+                        </a>
                     </div>
                 </div>
-                <div class="col-lg-6 d-lg-flex flex-lg-column align-items-stretch order-1 order-lg-2 hero-img" data-aos="fade-up">
+                <div class="col-lg-6 d-lg-flex flex-lg-column align-items-stretch order-1 order-lg-2 hero-img"
+                    data-aos="fade-up">
                     <img src="assets/img/top-image.png" class="img-fluid" alt="" />
                 </div>
             </div>
@@ -132,11 +141,9 @@
                             <p>
                                 Stop loosing money to unscrupulous mechanics and repair technicians
                             </p>
-                            <!-- <p>
-                            Expensive and unplanned repairs put a strain on your budgets and leads to loss of business. You need to prevent small maintenance issues from becoming unplanned expensive repairs.
-                        </p> -->
                             <p>
-                                Currently, both you and the mechanic have asymmetrical knowledge about your car's problems. <br /> This places you at a cost and informational disadvantage.
+                                Currently, both you and the mechanic have asymmetrical knowledge about your car's
+                                problems. <br /> This places you at a cost and informational disadvantage.
                             </p>
                         </div>
                     </div>
@@ -149,7 +156,6 @@
                             <h3>
                                 A marketplace of genuine car supplies at fair prices. That provides you : -
                             </h3>
-                            <!-- <p>We believe that protecting your vehicle assets, keeping drivers and technicians on the road, and meeting customer demands on time are what keep you in business.</p> -->
                             <ul>
                                 <li>
                                     <i class="icofont-check"></i> Genuine and Reliable Vehicle Parts.
@@ -168,117 +174,57 @@
             </section>
             <!-- End Features Section -->
 
-            <!-- ======= Get-Started Section ======= -->
-            <section id="get-started" class="contact">
-                <div class="container">
-                    <div class="section-title">
-                        <h2>Get started today</h2>
-                        <p>
-                            We will enable you to easily manage the repair and maintenance of your vehicle(s)
-                        </p>
-                    </div>
-
-                    <div class="row">
-                        <div class="offset-lg-3 col-lg-6">
-                            <!-- <form action="forms/get-started.php" method="post" role="form" class="php-email-form" data-aos="fade-up"> -->
-
-                            <form action="https://submit-form.com/irvxuv5qmBYB6uANyj5kE" target="_self">
+            <!-- ======= Get-Started Modal ======= -->
+            <div class="modal fade" id="getStartedModal" tabindex="-1" role="dialog" aria-labelledby="getStartedModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <form action="https://submit-form.com/irvxuv5qmBYB6uANyj5kE" target="_self">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center" id="getStartedModalLabel">
+                                    Get Started Today
+                                    <p class="small">
+                                        We will enable you to easily manage the repair and maintenance of your
+                                        vehicle(s)
+                                    </p>
+                                </h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
                                 <input type="hidden" name="_feedback.success.title" value="Successful" />
-
-                                <input type="hidden" name="_feedback.success.message" value="Thanks for expressing interest. We will send you access instructions in the coming days" />
-
-                                <!-- <div class="form-group">
-                  <input
-                    placeholder="Your Full Name"
-                    type="text"
-                    name="name"
-                    class="form-control"
-                    id="name"
-                    data-rule="minlen:4"
-                    data-msg="Please enter at least 4 chars for your name"
-                  />
-                  <div class="validate"></div>
-                </div> -->
-                                <!-- <div class="form-group">
-                  <input
-                    placeholder="Your Email"
-                    type="email"
-                    class="form-control"
-                    name="email"
-                    id="email"
-                    data-rule="email"
-                    data-msg="Please enter a valid email"
-                  />
-                  <div class="validate"></div>
-                </div> -->
+                                <input type="hidden" name="_feedback.success.message"
+                                    value="Thanks for expressing interest. We will send you access instructions in the coming days" />
                                 <div class="form-group">
-                                    <input placeholder="Your Phone e.g 0722123456" type="text" class="form-control" name="phone" id="phone" data-rule="minlen:10" required="true" data-msg="Please enter at least 10 chars for phone number" style="border-radius: 5px;" size="10" maxlength="10"
-                                        minlength="10" />
+                                    <input placeholder="Your Phone e.g 0722123456" type="text" class="form-control"
+                                        name="phone" id="phone" data-rule="minlen:10" required="true"
+                                        data-msg="Please enter at least 10 chars for phone number"
+                                        style="border-radius: 5px;" size="10" maxlength="10" minlength="10" />
                                     <div class="validate"></div>
                                 </div>
-                                <!-- <div class="form-group">
-                  <input
-                    placeholder="Vehicle Make e.g Toyota"
-                    type="text"
-                    class="form-control"
-                    name="make"
-                    id="make"
-                    data-rule="minlen:3"
-                    data-msg="Please enter at least 3 chars of Vehicle Make"
-                  />
-                  <div class="validate"></div>
-                </div> -->
-                                <!-- <div class="form-group">
-                  <input
-                    placeholder="Vehicle Model e.g Premio"
-                    type="text"
-                    class="form-control"
-                    name="model"
-                    id="model"
-                    data-rule="minlen:3"
-                    data-msg="Please enter at least 3 chars of Vehicle Model"
-                  />
-                  <div class="validate"></div>
-                </div> -->
-                                <!-- <div class="form-group">
-                  <input
-                    placeholder="Year of Manufacture e.g.2010"
-                    type="text"
-                    class="form-control"
-                    name="yom"
-                    id="yom"
-                    data-rule="minlen:4"
-                    data-msg="Please enter at least 4 chars of Year of Manufacture"
-                  />
-                  <div class="validate"></div>
-                </div> -->
                                 <div class="form-group">
-                                    <select class="form-control" name="service" required="true" data-msg="Please select preferred service">
-                    <option value="">Select Preferred Service(s)</option>
-                    <option value="mechanics">Trusted Mechanic</option>
-                    <option value="marketplace">Trusted Marketplace</option>
-                    <option value="both">Both</option>
-                  </select>
+                                    <select class="form-control" name="service" required="true"
+                                        data-msg="Please select preferred service">
+                                        <option value="">Select Preferred Service(s)</option>
+                                        <option value="mechanics">Trusted Mechanic</option>
+                                        <option value="marketplace">Trusted Marketplace</option>
+                                        <option value="both">Both</option>
+                                    </select>
                                     <div class="validate"></div>
                                 </div>
-                                <!-- <div class="mb-3">
-                                    <div class="loading">Loading</div>
-                                    <div class="error-message"></div>
-                                    <div class="sent-message">
-                                        Your submission has been sent. Thank you!
-                                    </div>
-                                </div> -->
+                            </div>
+                            <div class="modal-footer">
                                 <div class="text-center">
                                     <button class="get-started-btn" type="submit">
-                    Get Free Access
-                  </button>
+                                        Get Free Access
+                                    </button>
                                 </div>
-                            </form>
-                        </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
-            </section>
-            <!-- End Get-Started Section -->
+            </div>
         </main>
         <!-- End #main -->
 
@@ -290,7 +236,8 @@
                         <div class="col-md-4">
                             <h2>MOTILIX</h2>
                             <p>
-                                MOTILIX is a platform that allows your unlimited access to a country wide network of trusted mechanics, genuine spare parts and aggregated vehicle information.
+                                MOTILIX is a platform that allows your unlimited access to a country wide network of
+                                trusted mechanics, genuine spare parts and aggregated vehicle information.
                             </p>
                         </div>
                         <div class="col-md-4 mt-3">
